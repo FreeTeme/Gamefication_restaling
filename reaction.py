@@ -35,7 +35,3 @@ async def get_total_reactions(channel):
             return total_reactions
 
 
-# Пример вызова функции 
-with client: 
-    total_reactions = client.loop.run_until_complete(get_total_reactions("@studeventsmsk")) 
-    print(f"Общее количество реакций на последнем сообщении: {total_reactions}")
